@@ -1,0 +1,97 @@
+/* src/components/Chat/Chat.css */
+
+.chat-app {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .chat-sidebar {
+    width: 25vw; /* Adjusted width */
+    height: 88vh; /* Full viewport height */
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+  }
+  
+  .chat-main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+  
+  /* src/components/Order/Order.css */
+
+.order-list {
+    width: 100%;
+    height: calc(100vh - 56px); /* Adjusted height */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .order-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: linear-gradient(135deg, #009688, #004d40); /* Gradient background */
+    color: white;
+    position: relative;
+  }
+  
+  .order-list-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .search-icon {
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .order-info {
+    flex-grow: 1;
+  }
+  
+  .order-name {
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 4px;
+  }
+  
+  .order-status {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .order-details {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+  }
+  
+  .order-details-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .order-details-content {
+    margin-top: 10px;
+  }
+  
+  .order-details-item {
+    margin-bottom: 8px;
+  }
+  
+  

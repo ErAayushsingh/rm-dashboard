@@ -1,0 +1,50 @@
+/* src/App.css */
+
+.App {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.sidebar {
+  position: fixed;
+  top: 56px; /* Navbar height */
+  left: -250px;
+  width: 250px;
+  height: calc(100% - 56px); /* Full height minus the Navbar */
+  transition: left 0.3s ease;
+  z-index: 1040;
+  background-color: #343a40; /* Sidebar background color */
+  padding: 20px;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.close-btn {
+  margin-bottom: 20px;
+}
+
+.content {
+  padding-top: 56px; /* Leave space for the Navbar */
+  width: 100%;
+  overflow-y: auto;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    left: -100%;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+}
+
+.nav-bar,.sidebar  {
+  background: linear-gradient(135deg, #009688, #004d40);
+}
